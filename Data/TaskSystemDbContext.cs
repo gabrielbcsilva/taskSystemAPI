@@ -14,10 +14,11 @@ namespace taskSystemAPI.Data
             : base(options)
         {
         }
-        public DbSet<Models.UserModel> Users{get;set;}
-        public DbSet<Models.TaskModel> Tasks{get;set;}
+        public DbSet<Models.UserModel> Users { get; set; }
+        public DbSet<Models.TaskModel> Tasks { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder){
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
             modelBuilder.ApplyConfiguration(new UserMap());
             modelBuilder.ApplyConfiguration(new TaskMap());
             base.OnModelCreating(modelBuilder);
