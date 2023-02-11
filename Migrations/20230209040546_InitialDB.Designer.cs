@@ -11,8 +11,8 @@ using taskSystemAPI.Data;
 namespace taskSystemAPI.Migrations
 {
     [DbContext(typeof(TaskSystemDbContext))]
-    [Migration("20230206013138_InitialDb")]
-    partial class InitialDb
+    [Migration("20230209040546_InitialDB")]
+    partial class InitialDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
