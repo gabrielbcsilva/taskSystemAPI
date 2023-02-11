@@ -11,5 +11,8 @@ namespace taskSystemAPI.Models
         public string? Name { get; set; }
         public string? Description { get; set; }
         public TaskStatus Status { get; set; }
+        public long? UserId{get;set;}
+
+        public virtual UserModel? User{get; set;}
     }
 }

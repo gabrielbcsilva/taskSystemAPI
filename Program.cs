@@ -16,6 +16,7 @@ builder.Services.AddEntityFrameworkSqlServer()
     );
     
 builder.Services.AddScoped<IUserRepository,UserRepository>();
+builder.Services.AddScoped<ITaskRepository,TaskRepository>();
 
 var app = builder.Build();
 
